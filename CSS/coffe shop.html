@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewed Awakening</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Brewed Awakening Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <h1>Welcome to Brewed Awakening</h1>
+            <p>Start your day with the perfect cup of coffee.</p>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Coffee Items -->
+            <div class="menu-item">
+                <img src="images/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A strong and bold coffee shot.</p>
+                <p class="price">$3.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Smooth espresso with steamed milk.</p>
+                <p class="price">$4.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Espresso with frothy milk and cocoa.</p>
+                <p class="price">$4.00</p>
+            </div>
+            <!-- Breakfast Items -->
+            <div class="menu-item">
+                <img src="images/sandwich.jpg" alt="Breakfast Sandwich">
+                <h3>Breakfast Sandwich</h3>
+                <p>Egg, cheese, and bacon on a croissant.</p>
+                <p class="price">$6.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/pancakes.jpg" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <p>Fluffy pancakes with maple syrup.</p>
+                <p class="price">$7.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/waffles.jpg" alt="Waffles">
+                <h3>Waffles</h3>
+                <p>Crispy waffles with fresh berries.</p>
+                <p class="price">$7.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Brewed Awakening is a cozy coffee shop dedicated to serving the finest coffee and breakfast items. Our mission is to provide a warm and welcoming environment where you can relax and enjoy your day.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Brewed Awakening. All rights reserved.</p>
+    </footer>
+</body>
+</html>
