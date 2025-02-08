@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Problem Solving</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Problem Solving</h1>
+
+    <div class="problem">
+      <h2>1. ATM Withdrawal System</h2>
+      <input type="number" id="balance" placeholder="Balance">
+      <input type="number" id="amount" placeholder="Amount">
+      <input type="number" id="pin" placeholder="PIN">
+      <input type="number" id="enteredPin" placeholder="Enter PIN">
+      <button onclick="runAtmWithdrawal()">Withdraw</button>
+      <p id="atmResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>2. Online Shopping Discount & Free Shipping</h2>
+      <input type="number" id="orderAmount" placeholder="Order Amount">
+      <button onclick="runCalculateFinalAmount()">Calculate</button>
+      <p id="shoppingResult"></p>
+    </div>
+
+   
+    <div class="problem">
+      <h2>3. Student Grading System</h2>
+      <input type="number" id="marks" placeholder="Marks">
+      <input type="number" id="attendance" placeholder="Attendance (%)">
+      <button onclick="runCalculateGrade()">Calculate Grade</button>
+      <p id="gradeResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>4. Smart Traffic Light System</h2>
+      <select id="density">
+        <option value="Heavy Traffic">Heavy Traffic</option>
+        <option value="Moderate Traffic">Moderate Traffic</option>
+        <option value="Light Traffic">Light Traffic</option>
+      </select>
+      <button onclick="runTrafficLightControl()">Check Green Time</button>
+      <p id="trafficResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>5. Movie Ticket Pricing</h2>
+      <input type="number" id="age" placeholder="Age">
+      <input type="number" id="showTime" placeholder="Show Time (24h)">
+      <button onclick="runCalculateTicketPrice()">Calculate Price</button>
+      <p id="ticketResult"></p>
+    </div>
+
+ 
+    <div class="problem">
+      <h2>6. Job Application Filter</h2>
+      <input type="number" id="jobAge" placeholder="Age">
+      <input type="number" id="experience" placeholder="Experience (years)">
+      <input type="text" id="qualification" placeholder="Qualification">
+      <button onclick="runIsEligibleForJob()">Check Eligibility</button>
+      <p id="jobResult"></p>
+    </div>
+
+   
+    <div class="problem">
+      <h2>7. E-commerce Coupon Redemption</h2>
+      <input type="number" id="couponOrderAmount" placeholder="Order Amount">
+      <input type="text" id="couponCode" placeholder="Coupon Code">
+      <button onclick="runApplyCoupon()">Apply Coupon</button>
+      <p id="couponResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>8. Fitness Membership Plan</h2>
+      <input type="checkbox" id="wantsTrainer"> Personal Trainer
+      <input type="checkbox" id="wantsDietPlan"> Diet Plan
+      <button onclick="runChoosePlan()">Suggest Plan</button>
+      <p id="fitnessResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>9. Electricity Bill Calculation</h2>
+      <input type="number" id="units" placeholder="Units">
+      <select id="timeOfDay">
+        <option value="Normal hours">Normal hours</option>
+        <option value="Peak hours">Peak hours</option>
+      </select>
+      <button onclick="runCalculateElectricityBill()">Calculate Bill</button>
+      <p id="electricityResult"></p>
+    </div>
+
+    <div class="problem">
+      <h2>10. Flight Ticket Booking System</h2>
+      <select id="classType">
+        <option value="Economy">Economy</option>
+        <option value="Business">Business</option>
+        <option value="First">First</option>
+      </select>
+      <input type="number" id="luggageWeight" placeholder="Luggage Weight (kg)">
+      <input type="checkbox" id="isStudent"> Student
+      <input type="checkbox" id="isSenior"> Senior
+      <button onclick="runCalculateFlightFare()">Calculate Fare</button>
+      <p id="flightResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
