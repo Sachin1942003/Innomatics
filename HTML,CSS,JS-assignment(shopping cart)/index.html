@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Mobiles</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+      <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="images/mobile1.jpg" alt="Product 1">
+       
+        <p class="description">High-quality product with excellent features.</p>
+        <p class="price">$10.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="images/mobile2.jpeg" alt="Product 2">
+     
+        <p class="description">Highlight Key Features and Benefits ...</p>
+        <p class="price">$15.10</p>
+        <p class="rating">Rating: ⭐⭐⭐☆☆</p>
+        <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="images/mobile3.jpg" alt="Product 3">
+        
+        <p class="description">Experience cutting-edge performance with a powerful processor</p>
+        <p class="price">$12.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Product 3', 30)">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="images/MacBook.jpg" alt="Product 4">
+        
+        <p class="description">Sleek and lightweight laptop with a touchscreen PixelSense display and all-day battery life.</p>
+        <p class="price">$40.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Product 4', 40)">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="images/laptop.jpf.avif" alt="Product 5">
+        
+        <p class="description">Advanced technology for modern needs.</p>
+        <p class="price">$36.00</p>
+        <p class="rating">Rating: ⭐⭐⭐☆☆</p>
+        <button onclick="addToCart('Product 5', 50)">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="images/laptop2.jpg" alt="Product 6">
+       
+        <p class="description">Business-class laptop with a durable carbon-fiber build, powerful Intel processor, and security features.</p>
+        <p class="price">$50.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Product 6', 60)">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div class="product">
+        <img src="images/laptop3.jpg" alt="Product 7">
+        
+        <p class="description">Affordable and high-performance.</p>
+        <p class="price">$50.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐☆</p>
+        <button onclick="addToCart('Product 7', 70)">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div class="product">
+        <img src="images/accessory-lamp.jpeg" alt="Product 8">
+       
+        <p class="description">Perfect for professional use.</p>
+        <p class="price">$10.00</p>
+        <p class="rating">Rating: ⭐⭐⭐☆☆</p>
+        <button onclick="addToCart('Product 8', 80)">Add to Cart</button>
+      </div>
+      <!-- Product 9 -->
+      <div class="product">
+        <img src="images/accesory-wallet.jpeg" alt="Product 9">
+        
+        <p class="description">Innovative and user-friendly.</p>
+        <p class="price">$5.00</p>
+        <p class="rating">Rating: ⭐⭐⭐⭐⭐</p>
+        <button onclick="addToCart('Product 9', 90)">Add to Cart</button>
+      </div>
+      <!-- Product 10 -->
+      <div class="product">
+         <img src="images/accesory-stand1.jpeg" alt="Product 8">
+         
+         <p class="description">Elevate your workspace with this adjustable laptop stand, designed for ergonomic comfort and stability, compatible with most laptops and tablets</p>
+         <p class="price">7.78</p>
+         <p class="rating">Rating: ⭐⭐⭐☆☆</p>
+         <button onclick="addToCart('Product 8', 80)">Add to Cart</button>
+       </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart" onclick="toggleCart()">×</span>
+      </div>
+      <div id="cart-items"></div>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button onclick="clearCart()">Empty Cart</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
